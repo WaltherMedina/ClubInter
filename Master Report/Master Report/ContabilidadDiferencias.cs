@@ -135,7 +135,7 @@ namespace Master_Report
                 reader2 = BUSSOCIO.GETEDADANTIGUEDAD_BUS(row.Cells["coNacionalidad"].Value as string, row.Cells["coDocumento"].Value as string);
                 reader2.Read();
                 lblEdad.Text = reader2.GetValue(0).ToString();
-                txtUltFechPago.Text = reader2.GetString(2);
+                if(reader2.GetValue(2).ToString() != "") { txtUltFechPago.Text = reader2.GetString(2); } else { txtUltFechPago.Text = ""; }              
                 txtNombres.Text = reader.GetString(25);
                 txtDocumento.Text = reader.GetString(1);
                 txtDireccion.Text = reader.GetString(26);

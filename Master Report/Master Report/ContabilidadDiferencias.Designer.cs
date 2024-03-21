@@ -29,18 +29,48 @@ namespace Master_Report
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContabilidadDiferencias));
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.PanelDetalleBoleta = new System.Windows.Forms.Panel();
             this.dataGridDetalleBoleta = new System.Windows.Forms.DataGridView();
+            this.coPerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coTransaccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coFechPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coGlosa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coMontSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coMontoDo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coFlagEstReg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coFlagDebe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coFechCrea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coUserCrea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coFechActua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coUserAct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coIGVAfecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coNacionalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PanelBarraDetBoleta = new System.Windows.Forms.Panel();
             this.lblInformaciónPago = new System.Windows.Forms.Label();
             this.PanelBoleta = new System.Windows.Forms.Panel();
             this.dataGridDifIGV = new System.Windows.Forms.DataGridView();
+            this.coPersonaID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coComPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coDocCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coSerie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coMonRecibido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coMontTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coFormPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coFechCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coIGVDiferencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coMontoRedondeado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coFechaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coHoraPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coUserCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserActualizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PanelBarraBoleta = new System.Windows.Forms.Panel();
             this.lblTituloBoletaDif = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -73,7 +103,56 @@ namespace Master_Report
             this.PanelBarraInfoDetBoleta = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.PanelInfoSocio = new System.Windows.Forms.Panel();
+            this.panel39 = new System.Windows.Forms.Panel();
+            this.txtEstadoCivil = new System.Windows.Forms.TextBox();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.txtPais = new System.Windows.Forms.TextBox();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.txtProvincia = new System.Windows.Forms.TextBox();
+            this.panel36 = new System.Windows.Forms.Panel();
+            this.txtCiudad = new System.Windows.Forms.TextBox();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.lblEstadoCivil = new System.Windows.Forms.Label();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.lblPais = new System.Windows.Forms.Label();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.lblProvincia = new System.Windows.Forms.Label();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.lblCiudad = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.lblDocumento = new System.Windows.Forms.Label();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.lblNombres = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.picSocio = new System.Windows.Forms.PictureBox();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.txtUltFechPago = new System.Windows.Forms.TextBox();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.lblUltFechPago = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.lblTipoSocio = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.lblFamiliar = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.lblNumSoc = new System.Windows.Forms.Label();
             this.PanelBarraInfoSoc = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.PanelBarraPrincipal = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnBuscarFechas = new System.Windows.Forms.Button();
@@ -89,85 +168,6 @@ namespace Master_Report
             this.dateTimePickerFechIni = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelFechIni = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.panel38 = new System.Windows.Forms.Panel();
-            this.panel39 = new System.Windows.Forms.Panel();
-            this.lblNumSoc = new System.Windows.Forms.Label();
-            this.lblFamiliar = new System.Windows.Forms.Label();
-            this.lblTipoSocio = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.lblEdad = new System.Windows.Forms.Label();
-            this.lblUltFechPago = new System.Windows.Forms.Label();
-            this.lblNombres = new System.Windows.Forms.Label();
-            this.lblDocumento = new System.Windows.Forms.Label();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.lblCiudad = new System.Windows.Forms.Label();
-            this.lblProvincia = new System.Windows.Forms.Label();
-            this.lblPais = new System.Windows.Forms.Label();
-            this.lblEstadoCivil = new System.Windows.Forms.Label();
-            this.txtNombres = new System.Windows.Forms.TextBox();
-            this.txtDocumento = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtCiudad = new System.Windows.Forms.TextBox();
-            this.txtProvincia = new System.Windows.Forms.TextBox();
-            this.txtPais = new System.Windows.Forms.TextBox();
-            this.txtEstadoCivil = new System.Windows.Forms.TextBox();
-            this.picSocio = new System.Windows.Forms.PictureBox();
-            this.coPerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coTransaccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coFechPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coGlosa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coMontSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coMontoDo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coFlagEstReg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coFlagDebe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coFechCrea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coUserCrea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coFechActua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coUserAct = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coIGVAfecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coNacionalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.coPersonaID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coComPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coDocCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coSerie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coMonRecibido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coMontTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coFormPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coFechCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coIGVDiferencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coMontoRedondeado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coFechaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coHoraPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coUserCreacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserActualizacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.txtUltFechPago = new System.Windows.Forms.TextBox();
             this.PanelPrincipal.SuspendLayout();
             this.PanelDetalleBoleta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDetalleBoleta)).BeginInit();
@@ -193,6 +193,33 @@ namespace Master_Report
             this.PanelContenedorTitComprobante.SuspendLayout();
             this.PanelBarraInfoDetBoleta.SuspendLayout();
             this.PanelInfoSocio.SuspendLayout();
+            this.panel39.SuspendLayout();
+            this.panel38.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel36.SuspendLayout();
+            this.panel35.SuspendLayout();
+            this.panel34.SuspendLayout();
+            this.panel33.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSocio)).BeginInit();
+            this.panel17.SuspendLayout();
+            this.panel40.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.PanelBarraInfoSoc.SuspendLayout();
             this.PanelBarraPrincipal.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -202,33 +229,6 @@ namespace Master_Report
             this.PanelPrincipalFechIni.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.panel33.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.panel35.SuspendLayout();
-            this.panel36.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.panel38.SuspendLayout();
-            this.panel39.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSocio)).BeginInit();
-            this.panel40.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelPrincipal
@@ -263,14 +263,14 @@ namespace Master_Report
             this.dataGridDetalleBoleta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridDetalleBoleta.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridDetalleBoleta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridDetalleBoleta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridDetalleBoleta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridDetalleBoleta.ColumnHeadersHeight = 35;
             this.dataGridDetalleBoleta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridDetalleBoleta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -289,14 +289,14 @@ namespace Master_Report
             this.coIGVAfecto,
             this.coDocumento,
             this.coNacionalidad});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridDetalleBoleta.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridDetalleBoleta.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridDetalleBoleta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridDetalleBoleta.EnableHeadersVisualStyles = false;
             this.dataGridDetalleBoleta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -308,6 +308,104 @@ namespace Master_Report
             this.dataGridDetalleBoleta.Size = new System.Drawing.Size(989, 268);
             this.dataGridDetalleBoleta.TabIndex = 4;
             this.dataGridDetalleBoleta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridDetalleBoleta_CellContentClick);
+            // 
+            // coPerID
+            // 
+            this.coPerID.FillWeight = 50.76141F;
+            this.coPerID.HeaderText = "Persona ID";
+            this.coPerID.Name = "coPerID";
+            this.coPerID.ReadOnly = true;
+            this.coPerID.Visible = false;
+            // 
+            // coTransaccion
+            // 
+            this.coTransaccion.FillWeight = 315.6968F;
+            this.coTransaccion.HeaderText = "Transaccion";
+            this.coTransaccion.Name = "coTransaccion";
+            this.coTransaccion.ReadOnly = true;
+            // 
+            // coFechPago
+            // 
+            this.coFechPago.HeaderText = "Fecha Pago";
+            this.coFechPago.Name = "coFechPago";
+            this.coFechPago.ReadOnly = true;
+            // 
+            // coGlosa
+            // 
+            this.coGlosa.HeaderText = "Glosa";
+            this.coGlosa.Name = "coGlosa";
+            this.coGlosa.ReadOnly = true;
+            // 
+            // coMontSo
+            // 
+            this.coMontSo.FillWeight = 44.57397F;
+            this.coMontSo.HeaderText = "Monto S/";
+            this.coMontSo.Name = "coMontSo";
+            this.coMontSo.ReadOnly = true;
+            // 
+            // coMontoDo
+            // 
+            this.coMontoDo.FillWeight = 42.71715F;
+            this.coMontoDo.HeaderText = "Monto $/";
+            this.coMontoDo.Name = "coMontoDo";
+            this.coMontoDo.ReadOnly = true;
+            // 
+            // coFlagEstReg
+            // 
+            this.coFlagEstReg.HeaderText = "Estado";
+            this.coFlagEstReg.Name = "coFlagEstReg";
+            this.coFlagEstReg.ReadOnly = true;
+            // 
+            // coFlagDebe
+            // 
+            this.coFlagDebe.HeaderText = "Debe";
+            this.coFlagDebe.Name = "coFlagDebe";
+            this.coFlagDebe.ReadOnly = true;
+            // 
+            // coFechCrea
+            // 
+            this.coFechCrea.FillWeight = 46.25051F;
+            this.coFechCrea.HeaderText = "Fecha Creación";
+            this.coFechCrea.Name = "coFechCrea";
+            this.coFechCrea.ReadOnly = true;
+            // 
+            // coUserCrea
+            // 
+            this.coUserCrea.HeaderText = "Usuario Creación";
+            this.coUserCrea.Name = "coUserCrea";
+            this.coUserCrea.ReadOnly = true;
+            // 
+            // coFechActua
+            // 
+            this.coFechActua.HeaderText = "Fecha Actulización";
+            this.coFechActua.Name = "coFechActua";
+            this.coFechActua.ReadOnly = true;
+            // 
+            // coUserAct
+            // 
+            this.coUserAct.HeaderText = "Usuario Actulización";
+            this.coUserAct.Name = "coUserAct";
+            this.coUserAct.ReadOnly = true;
+            // 
+            // coIGVAfecto
+            // 
+            this.coIGVAfecto.HeaderText = "IGV Afecto";
+            this.coIGVAfecto.Name = "coIGVAfecto";
+            this.coIGVAfecto.ReadOnly = true;
+            // 
+            // coDocumento
+            // 
+            this.coDocumento.HeaderText = "Documento";
+            this.coDocumento.Name = "coDocumento";
+            this.coDocumento.ReadOnly = true;
+            this.coDocumento.Visible = false;
+            // 
+            // coNacionalidad
+            // 
+            this.coNacionalidad.HeaderText = "Nacionalidad";
+            this.coNacionalidad.Name = "coNacionalidad";
+            this.coNacionalidad.ReadOnly = true;
+            this.coNacionalidad.Visible = false;
             // 
             // PanelBarraDetBoleta
             // 
@@ -352,14 +450,14 @@ namespace Master_Report
             this.dataGridDifIGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridDifIGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridDifIGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridDifIGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridDifIGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridDifIGV.ColumnHeadersHeight = 35;
             this.dataGridDifIGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridDifIGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -378,14 +476,14 @@ namespace Master_Report
             this.coHoraPago,
             this.coUserCreacion,
             this.UserActualizacion});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridDifIGV.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridDifIGV.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridDifIGV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridDifIGV.EnableHeadersVisualStyles = false;
             this.dataGridDifIGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -397,6 +495,111 @@ namespace Master_Report
             this.dataGridDifIGV.Size = new System.Drawing.Size(989, 279);
             this.dataGridDifIGV.TabIndex = 1;
             this.dataGridDifIGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridDifIGV_CellClick);
+            // 
+            // coPersonaID
+            // 
+            this.coPersonaID.HeaderText = "PersonaID";
+            this.coPersonaID.Name = "coPersonaID";
+            this.coPersonaID.ReadOnly = true;
+            this.coPersonaID.Visible = false;
+            // 
+            // coComPago
+            // 
+            this.coComPago.FillWeight = 145.6245F;
+            this.coComPago.HeaderText = "Comp.Pago";
+            this.coComPago.Name = "coComPago";
+            this.coComPago.ReadOnly = true;
+            // 
+            // coDocCodigo
+            // 
+            this.coDocCodigo.FillWeight = 22.46418F;
+            this.coDocCodigo.HeaderText = "DocCodigo";
+            this.coDocCodigo.Name = "coDocCodigo";
+            this.coDocCodigo.ReadOnly = true;
+            // 
+            // coSerie
+            // 
+            this.coSerie.FillWeight = 31.27703F;
+            this.coSerie.HeaderText = "Serie";
+            this.coSerie.Name = "coSerie";
+            this.coSerie.ReadOnly = true;
+            // 
+            // coNumero
+            // 
+            this.coNumero.FillWeight = 42.1818F;
+            this.coNumero.HeaderText = "Numero";
+            this.coNumero.Name = "coNumero";
+            this.coNumero.ReadOnly = true;
+            // 
+            // coMonRecibido
+            // 
+            this.coMonRecibido.FillWeight = 58.41455F;
+            this.coMonRecibido.HeaderText = "Monto Recibido";
+            this.coMonRecibido.Name = "coMonRecibido";
+            this.coMonRecibido.ReadOnly = true;
+            // 
+            // coMontTotal
+            // 
+            this.coMontTotal.FillWeight = 82.28488F;
+            this.coMontTotal.HeaderText = "Monto Total";
+            this.coMontTotal.Name = "coMontTotal";
+            this.coMontTotal.ReadOnly = true;
+            // 
+            // coFormPago
+            // 
+            this.coFormPago.FillWeight = 115.7694F;
+            this.coFormPago.HeaderText = "Forma de Pago";
+            this.coFormPago.Name = "coFormPago";
+            this.coFormPago.ReadOnly = true;
+            // 
+            // coFechCreacion
+            // 
+            this.coFechCreacion.FillWeight = 206.3591F;
+            this.coFechCreacion.HeaderText = "Fech.Creación";
+            this.coFechCreacion.Name = "coFechCreacion";
+            this.coFechCreacion.ReadOnly = true;
+            // 
+            // coIGVDiferencia
+            // 
+            this.coIGVDiferencia.FillWeight = 251.8921F;
+            this.coIGVDiferencia.HeaderText = "IGV.Diferencia";
+            this.coIGVDiferencia.Name = "coIGVDiferencia";
+            this.coIGVDiferencia.ReadOnly = true;
+            // 
+            // coMontoRedondeado
+            // 
+            this.coMontoRedondeado.HeaderText = "Monto Redondeado";
+            this.coMontoRedondeado.Name = "coMontoRedondeado";
+            this.coMontoRedondeado.ReadOnly = true;
+            this.coMontoRedondeado.Visible = false;
+            // 
+            // coFechaPago
+            // 
+            this.coFechaPago.HeaderText = "Fecha Pago";
+            this.coFechaPago.Name = "coFechaPago";
+            this.coFechaPago.ReadOnly = true;
+            this.coFechaPago.Visible = false;
+            // 
+            // coHoraPago
+            // 
+            this.coHoraPago.HeaderText = "Hora Pago";
+            this.coHoraPago.Name = "coHoraPago";
+            this.coHoraPago.ReadOnly = true;
+            this.coHoraPago.Visible = false;
+            // 
+            // coUserCreacion
+            // 
+            this.coUserCreacion.HeaderText = "Usuario Crea";
+            this.coUserCreacion.Name = "coUserCreacion";
+            this.coUserCreacion.ReadOnly = true;
+            this.coUserCreacion.Visible = false;
+            // 
+            // UserActualizacion
+            // 
+            this.UserActualizacion.HeaderText = "coUserActualiza";
+            this.UserActualizacion.Name = "UserActualizacion";
+            this.UserActualizacion.ReadOnly = true;
+            this.UserActualizacion.Visible = false;
             // 
             // PanelBarraBoleta
             // 
@@ -777,6 +980,568 @@ namespace Master_Report
             this.PanelInfoSocio.Size = new System.Drawing.Size(284, 309);
             this.PanelInfoSocio.TabIndex = 0;
             // 
+            // panel39
+            // 
+            this.panel39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel39.Controls.Add(this.txtEstadoCivil);
+            this.panel39.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel39.Location = new System.Drawing.Point(108, 287);
+            this.panel39.Name = "panel39";
+            this.panel39.Size = new System.Drawing.Size(176, 22);
+            this.panel39.TabIndex = 14;
+            // 
+            // txtEstadoCivil
+            // 
+            this.txtEstadoCivil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEstadoCivil.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtEstadoCivil.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstadoCivil.ForeColor = System.Drawing.Color.White;
+            this.txtEstadoCivil.Location = new System.Drawing.Point(0, 0);
+            this.txtEstadoCivil.Multiline = true;
+            this.txtEstadoCivil.Name = "txtEstadoCivil";
+            this.txtEstadoCivil.ReadOnly = true;
+            this.txtEstadoCivil.Size = new System.Drawing.Size(176, 22);
+            this.txtEstadoCivil.TabIndex = 3;
+            // 
+            // panel38
+            // 
+            this.panel38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel38.Controls.Add(this.txtPais);
+            this.panel38.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel38.Location = new System.Drawing.Point(108, 265);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(176, 22);
+            this.panel38.TabIndex = 13;
+            // 
+            // txtPais
+            // 
+            this.txtPais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPais.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPais.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPais.ForeColor = System.Drawing.Color.White;
+            this.txtPais.Location = new System.Drawing.Point(0, 0);
+            this.txtPais.Multiline = true;
+            this.txtPais.Name = "txtPais";
+            this.txtPais.ReadOnly = true;
+            this.txtPais.Size = new System.Drawing.Size(176, 22);
+            this.txtPais.TabIndex = 3;
+            // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel37.Controls.Add(this.txtProvincia);
+            this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel37.Location = new System.Drawing.Point(108, 243);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(176, 22);
+            this.panel37.TabIndex = 12;
+            // 
+            // txtProvincia
+            // 
+            this.txtProvincia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtProvincia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProvincia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtProvincia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProvincia.ForeColor = System.Drawing.Color.White;
+            this.txtProvincia.Location = new System.Drawing.Point(0, 0);
+            this.txtProvincia.Multiline = true;
+            this.txtProvincia.Name = "txtProvincia";
+            this.txtProvincia.ReadOnly = true;
+            this.txtProvincia.Size = new System.Drawing.Size(176, 22);
+            this.txtProvincia.TabIndex = 3;
+            // 
+            // panel36
+            // 
+            this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel36.Controls.Add(this.txtCiudad);
+            this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel36.Location = new System.Drawing.Point(108, 221);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(176, 22);
+            this.panel36.TabIndex = 11;
+            // 
+            // txtCiudad
+            // 
+            this.txtCiudad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCiudad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCiudad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCiudad.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCiudad.ForeColor = System.Drawing.Color.White;
+            this.txtCiudad.Location = new System.Drawing.Point(0, 0);
+            this.txtCiudad.Multiline = true;
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.ReadOnly = true;
+            this.txtCiudad.Size = new System.Drawing.Size(176, 22);
+            this.txtCiudad.TabIndex = 3;
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel35.Controls.Add(this.txtDireccion);
+            this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel35.Location = new System.Drawing.Point(108, 199);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(176, 22);
+            this.panel35.TabIndex = 10;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDireccion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDireccion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.ForeColor = System.Drawing.Color.White;
+            this.txtDireccion.Location = new System.Drawing.Point(0, 0);
+            this.txtDireccion.Multiline = true;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.ReadOnly = true;
+            this.txtDireccion.Size = new System.Drawing.Size(176, 22);
+            this.txtDireccion.TabIndex = 3;
+            // 
+            // panel34
+            // 
+            this.panel34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel34.Controls.Add(this.txtDocumento);
+            this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel34.Location = new System.Drawing.Point(108, 177);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(176, 22);
+            this.panel34.TabIndex = 9;
+            // 
+            // txtDocumento
+            // 
+            this.txtDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDocumento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDocumento.ForeColor = System.Drawing.Color.White;
+            this.txtDocumento.Location = new System.Drawing.Point(0, 0);
+            this.txtDocumento.Multiline = true;
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.ReadOnly = true;
+            this.txtDocumento.Size = new System.Drawing.Size(176, 22);
+            this.txtDocumento.TabIndex = 3;
+            // 
+            // panel33
+            // 
+            this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel33.Controls.Add(this.txtNombres);
+            this.panel33.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel33.Location = new System.Drawing.Point(108, 142);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(176, 35);
+            this.panel33.TabIndex = 8;
+            // 
+            // txtNombres
+            // 
+            this.txtNombres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNombres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombres.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNombres.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombres.ForeColor = System.Drawing.Color.White;
+            this.txtNombres.Location = new System.Drawing.Point(0, 0);
+            this.txtNombres.Multiline = true;
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.ReadOnly = true;
+            this.txtNombres.Size = new System.Drawing.Size(176, 35);
+            this.txtNombres.TabIndex = 3;
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel25.Controls.Add(this.panel32);
+            this.panel25.Controls.Add(this.panel31);
+            this.panel25.Controls.Add(this.panel30);
+            this.panel25.Controls.Add(this.panel29);
+            this.panel25.Controls.Add(this.panel28);
+            this.panel25.Controls.Add(this.panel27);
+            this.panel25.Controls.Add(this.panel26);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel25.Location = new System.Drawing.Point(0, 142);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(108, 167);
+            this.panel25.TabIndex = 5;
+            // 
+            // panel32
+            // 
+            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel32.Controls.Add(this.lblEstadoCivil);
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel32.Location = new System.Drawing.Point(0, 145);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(108, 22);
+            this.panel32.TabIndex = 13;
+            // 
+            // lblEstadoCivil
+            // 
+            this.lblEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEstadoCivil.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblEstadoCivil.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstadoCivil.ForeColor = System.Drawing.Color.White;
+            this.lblEstadoCivil.Location = new System.Drawing.Point(0, 0);
+            this.lblEstadoCivil.Name = "lblEstadoCivil";
+            this.lblEstadoCivil.Size = new System.Drawing.Size(108, 22);
+            this.lblEstadoCivil.TabIndex = 10;
+            this.lblEstadoCivil.Text = "Estado Civil";
+            this.lblEstadoCivil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel31.Controls.Add(this.lblPais);
+            this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel31.Location = new System.Drawing.Point(0, 123);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(108, 22);
+            this.panel31.TabIndex = 12;
+            // 
+            // lblPais
+            // 
+            this.lblPais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPais.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPais.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPais.ForeColor = System.Drawing.Color.White;
+            this.lblPais.Location = new System.Drawing.Point(0, 0);
+            this.lblPais.Name = "lblPais";
+            this.lblPais.Size = new System.Drawing.Size(108, 22);
+            this.lblPais.TabIndex = 9;
+            this.lblPais.Text = "Pais";
+            this.lblPais.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel30.Controls.Add(this.lblProvincia);
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel30.Location = new System.Drawing.Point(0, 101);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(108, 22);
+            this.panel30.TabIndex = 11;
+            // 
+            // lblProvincia
+            // 
+            this.lblProvincia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblProvincia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblProvincia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvincia.ForeColor = System.Drawing.Color.White;
+            this.lblProvincia.Location = new System.Drawing.Point(0, 0);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(108, 22);
+            this.lblProvincia.TabIndex = 8;
+            this.lblProvincia.Text = "Provincia";
+            this.lblProvincia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel29.Controls.Add(this.lblCiudad);
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel29.Location = new System.Drawing.Point(0, 79);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(108, 22);
+            this.panel29.TabIndex = 10;
+            // 
+            // lblCiudad
+            // 
+            this.lblCiudad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCiudad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCiudad.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCiudad.ForeColor = System.Drawing.Color.White;
+            this.lblCiudad.Location = new System.Drawing.Point(0, 0);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(108, 22);
+            this.lblCiudad.TabIndex = 7;
+            this.lblCiudad.Text = "Ciudad";
+            this.lblCiudad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel28.Controls.Add(this.lblDireccion);
+            this.panel28.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel28.Location = new System.Drawing.Point(0, 57);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(108, 22);
+            this.panel28.TabIndex = 9;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDireccion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDireccion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.ForeColor = System.Drawing.Color.White;
+            this.lblDireccion.Location = new System.Drawing.Point(0, 0);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(108, 22);
+            this.lblDireccion.TabIndex = 6;
+            this.lblDireccion.Text = "Direccion";
+            this.lblDireccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel27.Controls.Add(this.lblDocumento);
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel27.Location = new System.Drawing.Point(0, 35);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(108, 22);
+            this.panel27.TabIndex = 8;
+            // 
+            // lblDocumento
+            // 
+            this.lblDocumento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDocumento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDocumento.ForeColor = System.Drawing.Color.White;
+            this.lblDocumento.Location = new System.Drawing.Point(0, 0);
+            this.lblDocumento.Name = "lblDocumento";
+            this.lblDocumento.Size = new System.Drawing.Size(108, 22);
+            this.lblDocumento.TabIndex = 5;
+            this.lblDocumento.Text = "Documento";
+            this.lblDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel26.Controls.Add(this.lblNombres);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel26.Location = new System.Drawing.Point(0, 0);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(108, 35);
+            this.panel26.TabIndex = 7;
+            // 
+            // lblNombres
+            // 
+            this.lblNombres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblNombres.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNombres.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombres.ForeColor = System.Drawing.Color.White;
+            this.lblNombres.Location = new System.Drawing.Point(0, 0);
+            this.lblNombres.Name = "lblNombres";
+            this.lblNombres.Size = new System.Drawing.Size(108, 35);
+            this.lblNombres.TabIndex = 4;
+            this.lblNombres.Text = "Aellidos y Nombres";
+            this.lblNombres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.panel18);
+            this.panel15.Controls.Add(this.panel17);
+            this.panel15.Controls.Add(this.panel16);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel15.Location = new System.Drawing.Point(0, 30);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(284, 112);
+            this.panel15.TabIndex = 4;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel18.Controls.Add(this.picSocio);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel18.Location = new System.Drawing.Point(94, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(96, 112);
+            this.panel18.TabIndex = 2;
+            // 
+            // picSocio
+            // 
+            this.picSocio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSocio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picSocio.Location = new System.Drawing.Point(0, 0);
+            this.picSocio.Name = "picSocio";
+            this.picSocio.Size = new System.Drawing.Size(96, 112);
+            this.picSocio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSocio.TabIndex = 1;
+            this.picSocio.TabStop = false;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel17.Controls.Add(this.panel40);
+            this.panel17.Controls.Add(this.panel24);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel17.Location = new System.Drawing.Point(190, 0);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(94, 112);
+            this.panel17.TabIndex = 1;
+            // 
+            // panel40
+            // 
+            this.panel40.Controls.Add(this.txtUltFechPago);
+            this.panel40.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel40.Location = new System.Drawing.Point(0, 44);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(94, 44);
+            this.panel40.TabIndex = 4;
+            // 
+            // txtUltFechPago
+            // 
+            this.txtUltFechPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUltFechPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUltFechPago.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtUltFechPago.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUltFechPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.txtUltFechPago.Location = new System.Drawing.Point(0, 0);
+            this.txtUltFechPago.Multiline = true;
+            this.txtUltFechPago.Name = "txtUltFechPago";
+            this.txtUltFechPago.ReadOnly = true;
+            this.txtUltFechPago.Size = new System.Drawing.Size(94, 44);
+            this.txtUltFechPago.TabIndex = 5;
+            this.txtUltFechPago.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel24.Controls.Add(this.lblUltFechPago);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel24.Location = new System.Drawing.Point(0, 0);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(94, 44);
+            this.panel24.TabIndex = 3;
+            // 
+            // lblUltFechPago
+            // 
+            this.lblUltFechPago.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblUltFechPago.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUltFechPago.ForeColor = System.Drawing.Color.White;
+            this.lblUltFechPago.Location = new System.Drawing.Point(0, 0);
+            this.lblUltFechPago.Name = "lblUltFechPago";
+            this.lblUltFechPago.Size = new System.Drawing.Size(94, 44);
+            this.lblUltFechPago.TabIndex = 7;
+            this.lblUltFechPago.Text = "Ultima Fecha Pago";
+            this.lblUltFechPago.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.panel23);
+            this.panel16.Controls.Add(this.panel22);
+            this.panel16.Controls.Add(this.panel21);
+            this.panel16.Controls.Add(this.panel19);
+            this.panel16.Controls.Add(this.panel20);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(94, 112);
+            this.panel16.TabIndex = 0;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel23.Controls.Add(this.lblEdad);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel23.Location = new System.Drawing.Point(0, 88);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(94, 22);
+            this.panel23.TabIndex = 6;
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEdad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblEdad.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdad.ForeColor = System.Drawing.Color.White;
+            this.lblEdad.Location = new System.Drawing.Point(0, 0);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(94, 22);
+            this.lblEdad.TabIndex = 10;
+            this.lblEdad.Text = "Edad";
+            this.lblEdad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel22.Controls.Add(this.lblEstado);
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel22.Location = new System.Drawing.Point(0, 66);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(94, 22);
+            this.panel22.TabIndex = 5;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEstado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.ForeColor = System.Drawing.Color.White;
+            this.lblEstado.Location = new System.Drawing.Point(0, 0);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(94, 22);
+            this.lblEstado.TabIndex = 10;
+            this.lblEstado.Text = "Estado";
+            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel21.Controls.Add(this.lblTipoSocio);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel21.Location = new System.Drawing.Point(0, 44);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(94, 22);
+            this.panel21.TabIndex = 4;
+            // 
+            // lblTipoSocio
+            // 
+            this.lblTipoSocio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTipoSocio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTipoSocio.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoSocio.ForeColor = System.Drawing.Color.White;
+            this.lblTipoSocio.Location = new System.Drawing.Point(0, 0);
+            this.lblTipoSocio.Name = "lblTipoSocio";
+            this.lblTipoSocio.Size = new System.Drawing.Size(94, 22);
+            this.lblTipoSocio.TabIndex = 10;
+            this.lblTipoSocio.Text = "Tipo";
+            this.lblTipoSocio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel19.Controls.Add(this.lblFamiliar);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel19.Location = new System.Drawing.Point(0, 22);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(94, 22);
+            this.panel19.TabIndex = 2;
+            // 
+            // lblFamiliar
+            // 
+            this.lblFamiliar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblFamiliar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblFamiliar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFamiliar.ForeColor = System.Drawing.Color.White;
+            this.lblFamiliar.Location = new System.Drawing.Point(0, 0);
+            this.lblFamiliar.Name = "lblFamiliar";
+            this.lblFamiliar.Size = new System.Drawing.Size(94, 22);
+            this.lblFamiliar.TabIndex = 10;
+            this.lblFamiliar.Text = "Familiar";
+            this.lblFamiliar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel20.Controls.Add(this.lblNumSoc);
+            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel20.Location = new System.Drawing.Point(0, 0);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(94, 22);
+            this.panel20.TabIndex = 3;
+            // 
+            // lblNumSoc
+            // 
+            this.lblNumSoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblNumSoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNumSoc.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumSoc.ForeColor = System.Drawing.Color.White;
+            this.lblNumSoc.Location = new System.Drawing.Point(0, 0);
+            this.lblNumSoc.Name = "lblNumSoc";
+            this.lblNumSoc.Size = new System.Drawing.Size(94, 22);
+            this.lblNumSoc.TabIndex = 5;
+            this.lblNumSoc.Text = "N°";
+            this.lblNumSoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // PanelBarraInfoSoc
             // 
             this.PanelBarraInfoSoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -786,6 +1551,19 @@ namespace Master_Report
             this.PanelBarraInfoSoc.Name = "PanelBarraInfoSoc";
             this.PanelBarraInfoSoc.Size = new System.Drawing.Size(284, 30);
             this.PanelBarraInfoSoc.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(284, 30);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "INFORMACIÓN DE SOCIO";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PanelBarraPrincipal
             // 
@@ -942,784 +1720,6 @@ namespace Master_Report
             this.labelFechIni.Text = "Fecha Inicio";
             this.labelFechIni.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.panel18);
-            this.panel15.Controls.Add(this.panel17);
-            this.panel15.Controls.Add(this.panel16);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 30);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(284, 112);
-            this.panel15.TabIndex = 4;
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.panel23);
-            this.panel16.Controls.Add(this.panel22);
-            this.panel16.Controls.Add(this.panel21);
-            this.panel16.Controls.Add(this.panel19);
-            this.panel16.Controls.Add(this.panel20);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel16.Location = new System.Drawing.Point(0, 0);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(94, 112);
-            this.panel16.TabIndex = 0;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel17.Controls.Add(this.panel40);
-            this.panel17.Controls.Add(this.panel24);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel17.Location = new System.Drawing.Point(190, 0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(94, 112);
-            this.panel17.TabIndex = 1;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel18.Controls.Add(this.picSocio);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(94, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(96, 112);
-            this.panel18.TabIndex = 2;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel19.Controls.Add(this.lblFamiliar);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel19.Location = new System.Drawing.Point(0, 22);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(94, 22);
-            this.panel19.TabIndex = 2;
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel20.Controls.Add(this.lblNumSoc);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel20.Location = new System.Drawing.Point(0, 0);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(94, 22);
-            this.panel20.TabIndex = 3;
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel21.Controls.Add(this.lblTipoSocio);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 44);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(94, 22);
-            this.panel21.TabIndex = 4;
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel22.Controls.Add(this.lblEstado);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel22.Location = new System.Drawing.Point(0, 66);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(94, 22);
-            this.panel22.TabIndex = 5;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel23.Controls.Add(this.lblEdad);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel23.Location = new System.Drawing.Point(0, 88);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(94, 22);
-            this.panel23.TabIndex = 6;
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel24.Controls.Add(this.lblUltFechPago);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 0);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(94, 44);
-            this.panel24.TabIndex = 3;
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel25.Controls.Add(this.panel32);
-            this.panel25.Controls.Add(this.panel31);
-            this.panel25.Controls.Add(this.panel30);
-            this.panel25.Controls.Add(this.panel29);
-            this.panel25.Controls.Add(this.panel28);
-            this.panel25.Controls.Add(this.panel27);
-            this.panel25.Controls.Add(this.panel26);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel25.Location = new System.Drawing.Point(0, 142);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(108, 167);
-            this.panel25.TabIndex = 5;
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel26.Controls.Add(this.lblNombres);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel26.Location = new System.Drawing.Point(0, 0);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(108, 35);
-            this.panel26.TabIndex = 7;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel27.Controls.Add(this.lblDocumento);
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel27.Location = new System.Drawing.Point(0, 35);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(108, 22);
-            this.panel27.TabIndex = 8;
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel28.Controls.Add(this.lblDireccion);
-            this.panel28.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel28.Location = new System.Drawing.Point(0, 57);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(108, 22);
-            this.panel28.TabIndex = 9;
-            // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel29.Controls.Add(this.lblCiudad);
-            this.panel29.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel29.Location = new System.Drawing.Point(0, 79);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(108, 22);
-            this.panel29.TabIndex = 10;
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel30.Controls.Add(this.lblProvincia);
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel30.Location = new System.Drawing.Point(0, 101);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(108, 22);
-            this.panel30.TabIndex = 11;
-            // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel31.Controls.Add(this.lblPais);
-            this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel31.Location = new System.Drawing.Point(0, 123);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(108, 22);
-            this.panel31.TabIndex = 12;
-            // 
-            // panel32
-            // 
-            this.panel32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel32.Controls.Add(this.lblEstadoCivil);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel32.Location = new System.Drawing.Point(0, 145);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(108, 22);
-            this.panel32.TabIndex = 13;
-            // 
-            // panel33
-            // 
-            this.panel33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel33.Controls.Add(this.txtNombres);
-            this.panel33.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel33.Location = new System.Drawing.Point(108, 142);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(176, 35);
-            this.panel33.TabIndex = 8;
-            // 
-            // panel34
-            // 
-            this.panel34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel34.Controls.Add(this.txtDocumento);
-            this.panel34.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel34.Location = new System.Drawing.Point(108, 177);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(176, 22);
-            this.panel34.TabIndex = 9;
-            // 
-            // panel35
-            // 
-            this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel35.Controls.Add(this.txtDireccion);
-            this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel35.Location = new System.Drawing.Point(108, 199);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(176, 22);
-            this.panel35.TabIndex = 10;
-            // 
-            // panel36
-            // 
-            this.panel36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel36.Controls.Add(this.txtCiudad);
-            this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel36.Location = new System.Drawing.Point(108, 221);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(176, 22);
-            this.panel36.TabIndex = 11;
-            // 
-            // panel37
-            // 
-            this.panel37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel37.Controls.Add(this.txtProvincia);
-            this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel37.Location = new System.Drawing.Point(108, 243);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(176, 22);
-            this.panel37.TabIndex = 12;
-            // 
-            // panel38
-            // 
-            this.panel38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel38.Controls.Add(this.txtPais);
-            this.panel38.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel38.Location = new System.Drawing.Point(108, 265);
-            this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(176, 22);
-            this.panel38.TabIndex = 13;
-            // 
-            // panel39
-            // 
-            this.panel39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel39.Controls.Add(this.txtEstadoCivil);
-            this.panel39.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel39.Location = new System.Drawing.Point(108, 287);
-            this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(176, 22);
-            this.panel39.TabIndex = 14;
-            // 
-            // lblNumSoc
-            // 
-            this.lblNumSoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNumSoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNumSoc.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumSoc.ForeColor = System.Drawing.Color.White;
-            this.lblNumSoc.Location = new System.Drawing.Point(0, 0);
-            this.lblNumSoc.Name = "lblNumSoc";
-            this.lblNumSoc.Size = new System.Drawing.Size(94, 22);
-            this.lblNumSoc.TabIndex = 5;
-            this.lblNumSoc.Text = "N°";
-            this.lblNumSoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblFamiliar
-            // 
-            this.lblFamiliar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblFamiliar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblFamiliar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFamiliar.ForeColor = System.Drawing.Color.White;
-            this.lblFamiliar.Location = new System.Drawing.Point(0, 0);
-            this.lblFamiliar.Name = "lblFamiliar";
-            this.lblFamiliar.Size = new System.Drawing.Size(94, 22);
-            this.lblFamiliar.TabIndex = 10;
-            this.lblFamiliar.Text = "Familiar";
-            this.lblFamiliar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTipoSocio
-            // 
-            this.lblTipoSocio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTipoSocio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTipoSocio.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoSocio.ForeColor = System.Drawing.Color.White;
-            this.lblTipoSocio.Location = new System.Drawing.Point(0, 0);
-            this.lblTipoSocio.Name = "lblTipoSocio";
-            this.lblTipoSocio.Size = new System.Drawing.Size(94, 22);
-            this.lblTipoSocio.TabIndex = 10;
-            this.lblTipoSocio.Text = "Tipo";
-            this.lblTipoSocio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEstado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.ForeColor = System.Drawing.Color.White;
-            this.lblEstado.Location = new System.Drawing.Point(0, 0);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(94, 22);
-            this.lblEstado.TabIndex = 10;
-            this.lblEstado.Text = "Estado";
-            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblEdad
-            // 
-            this.lblEdad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEdad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblEdad.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEdad.ForeColor = System.Drawing.Color.White;
-            this.lblEdad.Location = new System.Drawing.Point(0, 0);
-            this.lblEdad.Name = "lblEdad";
-            this.lblEdad.Size = new System.Drawing.Size(94, 22);
-            this.lblEdad.TabIndex = 10;
-            this.lblEdad.Text = "Edad";
-            this.lblEdad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblUltFechPago
-            // 
-            this.lblUltFechPago.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblUltFechPago.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUltFechPago.ForeColor = System.Drawing.Color.White;
-            this.lblUltFechPago.Location = new System.Drawing.Point(0, 0);
-            this.lblUltFechPago.Name = "lblUltFechPago";
-            this.lblUltFechPago.Size = new System.Drawing.Size(94, 44);
-            this.lblUltFechPago.TabIndex = 7;
-            this.lblUltFechPago.Text = "Ultima Fecha Pago";
-            this.lblUltFechPago.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblNombres
-            // 
-            this.lblNombres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNombres.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNombres.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombres.ForeColor = System.Drawing.Color.White;
-            this.lblNombres.Location = new System.Drawing.Point(0, 0);
-            this.lblNombres.Name = "lblNombres";
-            this.lblNombres.Size = new System.Drawing.Size(108, 35);
-            this.lblNombres.TabIndex = 4;
-            this.lblNombres.Text = "Aellidos y Nombres";
-            this.lblNombres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblDocumento
-            // 
-            this.lblDocumento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDocumento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDocumento.ForeColor = System.Drawing.Color.White;
-            this.lblDocumento.Location = new System.Drawing.Point(0, 0);
-            this.lblDocumento.Name = "lblDocumento";
-            this.lblDocumento.Size = new System.Drawing.Size(108, 22);
-            this.lblDocumento.TabIndex = 5;
-            this.lblDocumento.Text = "Documento";
-            this.lblDocumento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblDireccion
-            // 
-            this.lblDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDireccion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblDireccion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccion.ForeColor = System.Drawing.Color.White;
-            this.lblDireccion.Location = new System.Drawing.Point(0, 0);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(108, 22);
-            this.lblDireccion.TabIndex = 6;
-            this.lblDireccion.Text = "Direccion";
-            this.lblDireccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCiudad
-            // 
-            this.lblCiudad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCiudad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCiudad.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCiudad.ForeColor = System.Drawing.Color.White;
-            this.lblCiudad.Location = new System.Drawing.Point(0, 0);
-            this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(108, 22);
-            this.lblCiudad.TabIndex = 7;
-            this.lblCiudad.Text = "Ciudad";
-            this.lblCiudad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblProvincia
-            // 
-            this.lblProvincia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblProvincia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblProvincia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProvincia.ForeColor = System.Drawing.Color.White;
-            this.lblProvincia.Location = new System.Drawing.Point(0, 0);
-            this.lblProvincia.Name = "lblProvincia";
-            this.lblProvincia.Size = new System.Drawing.Size(108, 22);
-            this.lblProvincia.TabIndex = 8;
-            this.lblProvincia.Text = "Provincia";
-            this.lblProvincia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblPais
-            // 
-            this.lblPais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPais.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPais.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPais.ForeColor = System.Drawing.Color.White;
-            this.lblPais.Location = new System.Drawing.Point(0, 0);
-            this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(108, 22);
-            this.lblPais.TabIndex = 9;
-            this.lblPais.Text = "Pais";
-            this.lblPais.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblEstadoCivil
-            // 
-            this.lblEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEstadoCivil.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblEstadoCivil.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstadoCivil.ForeColor = System.Drawing.Color.White;
-            this.lblEstadoCivil.Location = new System.Drawing.Point(0, 0);
-            this.lblEstadoCivil.Name = "lblEstadoCivil";
-            this.lblEstadoCivil.Size = new System.Drawing.Size(108, 22);
-            this.lblEstadoCivil.TabIndex = 10;
-            this.lblEstadoCivil.Text = "Estado Civil";
-            this.lblEstadoCivil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtNombres
-            // 
-            this.txtNombres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNombres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombres.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNombres.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombres.ForeColor = System.Drawing.Color.White;
-            this.txtNombres.Location = new System.Drawing.Point(0, 0);
-            this.txtNombres.Multiline = true;
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.ReadOnly = true;
-            this.txtNombres.Size = new System.Drawing.Size(176, 35);
-            this.txtNombres.TabIndex = 3;
-            // 
-            // txtDocumento
-            // 
-            this.txtDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDocumento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDocumento.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDocumento.ForeColor = System.Drawing.Color.White;
-            this.txtDocumento.Location = new System.Drawing.Point(0, 0);
-            this.txtDocumento.Multiline = true;
-            this.txtDocumento.Name = "txtDocumento";
-            this.txtDocumento.ReadOnly = true;
-            this.txtDocumento.Size = new System.Drawing.Size(176, 22);
-            this.txtDocumento.TabIndex = 3;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDireccion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDireccion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.ForeColor = System.Drawing.Color.White;
-            this.txtDireccion.Location = new System.Drawing.Point(0, 0);
-            this.txtDireccion.Multiline = true;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.ReadOnly = true;
-            this.txtDireccion.Size = new System.Drawing.Size(176, 22);
-            this.txtDireccion.TabIndex = 3;
-            // 
-            // txtCiudad
-            // 
-            this.txtCiudad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCiudad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCiudad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCiudad.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCiudad.ForeColor = System.Drawing.Color.White;
-            this.txtCiudad.Location = new System.Drawing.Point(0, 0);
-            this.txtCiudad.Multiline = true;
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.ReadOnly = true;
-            this.txtCiudad.Size = new System.Drawing.Size(176, 22);
-            this.txtCiudad.TabIndex = 3;
-            // 
-            // txtProvincia
-            // 
-            this.txtProvincia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtProvincia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtProvincia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtProvincia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProvincia.ForeColor = System.Drawing.Color.White;
-            this.txtProvincia.Location = new System.Drawing.Point(0, 0);
-            this.txtProvincia.Multiline = true;
-            this.txtProvincia.Name = "txtProvincia";
-            this.txtProvincia.ReadOnly = true;
-            this.txtProvincia.Size = new System.Drawing.Size(176, 22);
-            this.txtProvincia.TabIndex = 3;
-            // 
-            // txtPais
-            // 
-            this.txtPais.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPais.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPais.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPais.ForeColor = System.Drawing.Color.White;
-            this.txtPais.Location = new System.Drawing.Point(0, 0);
-            this.txtPais.Multiline = true;
-            this.txtPais.Name = "txtPais";
-            this.txtPais.ReadOnly = true;
-            this.txtPais.Size = new System.Drawing.Size(176, 22);
-            this.txtPais.TabIndex = 3;
-            // 
-            // txtEstadoCivil
-            // 
-            this.txtEstadoCivil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEstadoCivil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEstadoCivil.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtEstadoCivil.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstadoCivil.ForeColor = System.Drawing.Color.White;
-            this.txtEstadoCivil.Location = new System.Drawing.Point(0, 0);
-            this.txtEstadoCivil.Multiline = true;
-            this.txtEstadoCivil.Name = "txtEstadoCivil";
-            this.txtEstadoCivil.ReadOnly = true;
-            this.txtEstadoCivil.Size = new System.Drawing.Size(176, 22);
-            this.txtEstadoCivil.TabIndex = 3;
-            // 
-            // picSocio
-            // 
-            this.picSocio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picSocio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picSocio.Location = new System.Drawing.Point(0, 0);
-            this.picSocio.Name = "picSocio";
-            this.picSocio.Size = new System.Drawing.Size(96, 112);
-            this.picSocio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picSocio.TabIndex = 1;
-            this.picSocio.TabStop = false;
-            // 
-            // coPerID
-            // 
-            this.coPerID.FillWeight = 50.76141F;
-            this.coPerID.HeaderText = "Persona ID";
-            this.coPerID.Name = "coPerID";
-            this.coPerID.ReadOnly = true;
-            this.coPerID.Visible = false;
-            // 
-            // coTransaccion
-            // 
-            this.coTransaccion.FillWeight = 315.6968F;
-            this.coTransaccion.HeaderText = "Transaccion";
-            this.coTransaccion.Name = "coTransaccion";
-            this.coTransaccion.ReadOnly = true;
-            // 
-            // coFechPago
-            // 
-            this.coFechPago.HeaderText = "Fecha Pago";
-            this.coFechPago.Name = "coFechPago";
-            this.coFechPago.ReadOnly = true;
-            // 
-            // coGlosa
-            // 
-            this.coGlosa.HeaderText = "Glosa";
-            this.coGlosa.Name = "coGlosa";
-            this.coGlosa.ReadOnly = true;
-            // 
-            // coMontSo
-            // 
-            this.coMontSo.FillWeight = 44.57397F;
-            this.coMontSo.HeaderText = "Monto S/";
-            this.coMontSo.Name = "coMontSo";
-            this.coMontSo.ReadOnly = true;
-            // 
-            // coMontoDo
-            // 
-            this.coMontoDo.FillWeight = 42.71715F;
-            this.coMontoDo.HeaderText = "Monto $/";
-            this.coMontoDo.Name = "coMontoDo";
-            this.coMontoDo.ReadOnly = true;
-            // 
-            // coFlagEstReg
-            // 
-            this.coFlagEstReg.HeaderText = "Estado";
-            this.coFlagEstReg.Name = "coFlagEstReg";
-            this.coFlagEstReg.ReadOnly = true;
-            // 
-            // coFlagDebe
-            // 
-            this.coFlagDebe.HeaderText = "Debe";
-            this.coFlagDebe.Name = "coFlagDebe";
-            this.coFlagDebe.ReadOnly = true;
-            // 
-            // coFechCrea
-            // 
-            this.coFechCrea.FillWeight = 46.25051F;
-            this.coFechCrea.HeaderText = "Fecha Creación";
-            this.coFechCrea.Name = "coFechCrea";
-            this.coFechCrea.ReadOnly = true;
-            // 
-            // coUserCrea
-            // 
-            this.coUserCrea.HeaderText = "Usuario Creación";
-            this.coUserCrea.Name = "coUserCrea";
-            this.coUserCrea.ReadOnly = true;
-            // 
-            // coFechActua
-            // 
-            this.coFechActua.HeaderText = "Fecha Actulización";
-            this.coFechActua.Name = "coFechActua";
-            this.coFechActua.ReadOnly = true;
-            // 
-            // coUserAct
-            // 
-            this.coUserAct.HeaderText = "Usuario Actulización";
-            this.coUserAct.Name = "coUserAct";
-            this.coUserAct.ReadOnly = true;
-            // 
-            // coIGVAfecto
-            // 
-            this.coIGVAfecto.HeaderText = "IGV Afecto";
-            this.coIGVAfecto.Name = "coIGVAfecto";
-            this.coIGVAfecto.ReadOnly = true;
-            // 
-            // coDocumento
-            // 
-            this.coDocumento.HeaderText = "Documento";
-            this.coDocumento.Name = "coDocumento";
-            this.coDocumento.ReadOnly = true;
-            this.coDocumento.Visible = false;
-            // 
-            // coNacionalidad
-            // 
-            this.coNacionalidad.HeaderText = "Nacionalidad";
-            this.coNacionalidad.Name = "coNacionalidad";
-            this.coNacionalidad.ReadOnly = true;
-            this.coNacionalidad.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(284, 30);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "INFORMACIÓN DE SOCIO";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // coPersonaID
-            // 
-            this.coPersonaID.HeaderText = "PersonaID";
-            this.coPersonaID.Name = "coPersonaID";
-            this.coPersonaID.ReadOnly = true;
-            this.coPersonaID.Visible = false;
-            // 
-            // coComPago
-            // 
-            this.coComPago.FillWeight = 145.6245F;
-            this.coComPago.HeaderText = "Comp.Pago";
-            this.coComPago.Name = "coComPago";
-            this.coComPago.ReadOnly = true;
-            // 
-            // coDocCodigo
-            // 
-            this.coDocCodigo.FillWeight = 22.46418F;
-            this.coDocCodigo.HeaderText = "DocCodigo";
-            this.coDocCodigo.Name = "coDocCodigo";
-            this.coDocCodigo.ReadOnly = true;
-            // 
-            // coSerie
-            // 
-            this.coSerie.FillWeight = 31.27703F;
-            this.coSerie.HeaderText = "Serie";
-            this.coSerie.Name = "coSerie";
-            this.coSerie.ReadOnly = true;
-            // 
-            // coNumero
-            // 
-            this.coNumero.FillWeight = 42.1818F;
-            this.coNumero.HeaderText = "Numero";
-            this.coNumero.Name = "coNumero";
-            this.coNumero.ReadOnly = true;
-            // 
-            // coMonRecibido
-            // 
-            this.coMonRecibido.FillWeight = 58.41455F;
-            this.coMonRecibido.HeaderText = "Monto Recibido";
-            this.coMonRecibido.Name = "coMonRecibido";
-            this.coMonRecibido.ReadOnly = true;
-            // 
-            // coMontTotal
-            // 
-            this.coMontTotal.FillWeight = 82.28488F;
-            this.coMontTotal.HeaderText = "Monto Total";
-            this.coMontTotal.Name = "coMontTotal";
-            this.coMontTotal.ReadOnly = true;
-            // 
-            // coFormPago
-            // 
-            this.coFormPago.FillWeight = 115.7694F;
-            this.coFormPago.HeaderText = "Forma de Pago";
-            this.coFormPago.Name = "coFormPago";
-            this.coFormPago.ReadOnly = true;
-            // 
-            // coFechCreacion
-            // 
-            this.coFechCreacion.FillWeight = 206.3591F;
-            this.coFechCreacion.HeaderText = "Fech.Creación";
-            this.coFechCreacion.Name = "coFechCreacion";
-            this.coFechCreacion.ReadOnly = true;
-            // 
-            // coIGVDiferencia
-            // 
-            this.coIGVDiferencia.FillWeight = 251.8921F;
-            this.coIGVDiferencia.HeaderText = "IGV.Diferencia";
-            this.coIGVDiferencia.Name = "coIGVDiferencia";
-            this.coIGVDiferencia.ReadOnly = true;
-            // 
-            // coMontoRedondeado
-            // 
-            this.coMontoRedondeado.HeaderText = "Monto Redondeado";
-            this.coMontoRedondeado.Name = "coMontoRedondeado";
-            this.coMontoRedondeado.ReadOnly = true;
-            this.coMontoRedondeado.Visible = false;
-            // 
-            // coFechaPago
-            // 
-            this.coFechaPago.HeaderText = "Fecha Pago";
-            this.coFechaPago.Name = "coFechaPago";
-            this.coFechaPago.ReadOnly = true;
-            this.coFechaPago.Visible = false;
-            // 
-            // coHoraPago
-            // 
-            this.coHoraPago.HeaderText = "Hora Pago";
-            this.coHoraPago.Name = "coHoraPago";
-            this.coHoraPago.ReadOnly = true;
-            this.coHoraPago.Visible = false;
-            // 
-            // coUserCreacion
-            // 
-            this.coUserCreacion.HeaderText = "Usuario Crea";
-            this.coUserCreacion.Name = "coUserCreacion";
-            this.coUserCreacion.ReadOnly = true;
-            this.coUserCreacion.Visible = false;
-            // 
-            // UserActualizacion
-            // 
-            this.UserActualizacion.HeaderText = "coUserActualiza";
-            this.UserActualizacion.Name = "UserActualizacion";
-            this.UserActualizacion.ReadOnly = true;
-            this.UserActualizacion.Visible = false;
-            // 
-            // panel40
-            // 
-            this.panel40.Controls.Add(this.txtUltFechPago);
-            this.panel40.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel40.Location = new System.Drawing.Point(0, 44);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(94, 44);
-            this.panel40.TabIndex = 4;
-            // 
-            // txtUltFechPago
-            // 
-            this.txtUltFechPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtUltFechPago.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUltFechPago.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtUltFechPago.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUltFechPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.txtUltFechPago.Location = new System.Drawing.Point(0, 0);
-            this.txtUltFechPago.Multiline = true;
-            this.txtUltFechPago.Name = "txtUltFechPago";
-            this.txtUltFechPago.ReadOnly = true;
-            this.txtUltFechPago.Size = new System.Drawing.Size(94, 44);
-            this.txtUltFechPago.TabIndex = 5;
-            this.txtUltFechPago.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // ContabilidadDiferencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1754,6 +1754,41 @@ namespace Master_Report
             this.PanelContenedorTitComprobante.ResumeLayout(false);
             this.PanelBarraInfoDetBoleta.ResumeLayout(false);
             this.PanelInfoSocio.ResumeLayout(false);
+            this.panel39.ResumeLayout(false);
+            this.panel39.PerformLayout();
+            this.panel38.ResumeLayout(false);
+            this.panel38.PerformLayout();
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel36.ResumeLayout(false);
+            this.panel36.PerformLayout();
+            this.panel35.ResumeLayout(false);
+            this.panel35.PerformLayout();
+            this.panel34.ResumeLayout(false);
+            this.panel34.PerformLayout();
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
+            this.panel25.ResumeLayout(false);
+            this.panel32.ResumeLayout(false);
+            this.panel31.ResumeLayout(false);
+            this.panel30.ResumeLayout(false);
+            this.panel29.ResumeLayout(false);
+            this.panel28.ResumeLayout(false);
+            this.panel27.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picSocio)).EndInit();
+            this.panel17.ResumeLayout(false);
+            this.panel40.ResumeLayout(false);
+            this.panel40.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel23.ResumeLayout(false);
+            this.panel22.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
             this.PanelBarraInfoSoc.ResumeLayout(false);
             this.PanelBarraPrincipal.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -1763,41 +1798,6 @@ namespace Master_Report
             this.PanelPrincipalFechIni.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel22.ResumeLayout(false);
-            this.panel23.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
-            this.panel27.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
-            this.panel29.ResumeLayout(false);
-            this.panel30.ResumeLayout(false);
-            this.panel31.ResumeLayout(false);
-            this.panel32.ResumeLayout(false);
-            this.panel33.ResumeLayout(false);
-            this.panel33.PerformLayout();
-            this.panel34.ResumeLayout(false);
-            this.panel34.PerformLayout();
-            this.panel35.ResumeLayout(false);
-            this.panel35.PerformLayout();
-            this.panel36.ResumeLayout(false);
-            this.panel36.PerformLayout();
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
-            this.panel38.ResumeLayout(false);
-            this.panel38.PerformLayout();
-            this.panel39.ResumeLayout(false);
-            this.panel39.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSocio)).EndInit();
-            this.panel40.ResumeLayout(false);
-            this.panel40.PerformLayout();
             this.ResumeLayout(false);
 
         }
