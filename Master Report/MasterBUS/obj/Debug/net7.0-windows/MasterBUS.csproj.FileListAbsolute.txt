@@ -1,0 +1,15 @@
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\bin\Debug\net7.0-windows\MasterBUS.deps.json
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\bin\Debug\net7.0-windows\MasterBUS.dll
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\bin\Debug\net7.0-windows\MasterBUS.pdb
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\MasterBUS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\MasterBUS.AssemblyInfoInputs.cache
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\MasterBUS.AssemblyInfo.cs
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\MasterBUS.csproj.CoreCompileInputs.cache
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\MasterBUS.dll
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\refint\MasterBUS.dll
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\MasterBUS.pdb
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\ref\MasterBUS.dll
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\bin\Debug\net7.0-windows\MasterBD.dll
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\bin\Debug\net7.0-windows\MasterBD.pdb
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\MasterBUS.csproj.AssemblyReference.cache
+C:\Users\fbejarano\source\repos\Master Report\MasterBUS\obj\Debug\net7.0-windows\MasterBUS.csproj.CopyComplete
