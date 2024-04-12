@@ -1,9 +1,0 @@
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\bin\Debug\ClubIntBUS.dll
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\bin\Debug\ClubIntBUS.pdb
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\bin\Debug\ClubIntBD.dll
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\bin\Debug\ClubIntBD.pdb
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\obj\Debug\ClubIntBUS.csproj.AssemblyReference.cache
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\obj\Debug\ClubIntBUS.csproj.CoreCompileInputs.cache
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\obj\Debug\ClubIntBUS.csproj.CopyComplete
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\obj\Debug\ClubIntBUS.dll
-C:\Users\fbejarano\source\repos\Master Report\ClubIntBUS\obj\Debug\ClubIntBUS.pdb
